@@ -1,0 +1,79 @@
+{
+    "config": {
+        "flow_title": "和风天气",
+        "step": {
+            "api": {
+                "title": "API配置",
+                "description": "配置API key、预警级别、传感器和省份等信息",
+                "data": {
+                    "api_key": "API key",
+                    "options": "启用的类型",
+                    "disasterlevel": "自然灾害级别",
+                    "disastermsg": "灾害预警信息",
+                    "province": "省份"
+                },
+                "data_description": {
+                    "api_key": "api平台申请的key",
+                    "options": "关注的天气类型",
+                    "disasterlevel": "关注的最低自然灾害级别",
+                    "disastermsg": "灾害预警信息的展示内容",
+                    "province": "所在省份/直辖市/自治区"
+                }
+            }, 
+            "city": {
+                "title": "选择城市",
+                "description": "已选：{tip}",
+                "data": {
+                    "city": "城市"
+                },
+                "data_description": {
+                    "city": "所在城市"
+                }
+            }, 
+            "district": {
+                "title": "选择地区",
+                "description": "已选：{tip}",
+                "data": {
+                    "district": "区"
+                },
+                "data_description": {
+                    "district": "所在区/县"
+                }
+            }
+        },
+        "abort": {
+            "already_configured": "Device is already configured"
+        },
+        "error": {
+            "api_key_error": "API key不可用",
+            "unknown_error": "未知错误",
+            "options_not_selected": "至少启用1个天气类型"
+        }
+    },
+    "options": {
+        "flow_title": "和风天气",
+        "step": {
+            "api": {
+                "title": "API配置",
+                "description": "当前位置：{tip}",
+                "data": {
+                    "api_key": "API key",
+                    "options": "启用的类型",
+                    "disasterlevel": "自然灾害级别",
+                    "disastermsg": "灾害预警信息"
+                },
+                "data_description": {
+                    "api_key": "api平台申请的key",
+                    "options": "关注的天气类型",
+                    "disasterlevel": "关注的最低自然灾害级别",
+                    "disastermsg": "灾害预警信息的展示内容"
+                }
+            }
+        },
+        "error": {
+            "api_key_error": "API key不可用",
+            "unknown_error": "未知错误",
+            "options_not_selected": "至少启用1个天气类型"
+        }
+    }
+}
